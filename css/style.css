@@ -1,0 +1,321 @@
+:root {
+    --primary-color-60: #ffffff;
+    --secondary-color-30: #1a1b1f;
+    --neutral-secondary-text: #767679;
+    --neutral-grey: #F4F4F4;
+    --font-all: 'Montserrat';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--primary-color-60);
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: var(--primary-color-60);
+    position: fixed;
+    top: 0;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header .menu-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color-30);
+    cursor: pointer;
+}
+
+#menuList {
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    width: 100%;
+    min-height: 0px;
+    background: var(--primary-color-60);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    display: block;
+    margin: 24px 16px 24px 0;
+    color: var(--primary-color-60);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--neutral-secondary-text);
+    font-size: 14px;
+    font-family: var(--font-all);
+    letter-spacing: 1px;
+}
+
+nav .select-item {
+    font-weight: 600;
+    color: var(--secondary-color-30);
+}
+
+section {
+    margin: 0 16px 0 16px;
+}
+
+/*----------Section-Abstract---------------*/
+
+.abstract p {
+    margin-top: 104px;
+    font-family: var(--font-all);
+    color: var(--secondary-color-30);
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+/*----------Section-Portfolio---------------*/
+
+.section-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.section-portfolio .card {
+    margin: 24px 0 16px 0;
+    width: auto;
+    text-align: center;
+}
+
+.section-portfolio .card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.section-portfolio .card h1 {
+    margin-top: 40px;
+    font-family: var(--font-all);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary-color-30);
+    cursor: pointer;
+}
+
+.section-portfolio .card h2 {
+    margin-top: 8px;
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--neutral-secondary-text);
+}
+
+/*----------Section-Experience---------------*/
+
+.section-experiences {
+    margin-top: 64px;
+}
+
+.section-experiences h1 {
+    font-family: var(--font-all);
+    font-size: 1.8rem;
+    color: var(--secondary-color-30);
+    font-weight: 600;
+}
+
+.section-experiences .experience-text {
+    margin-top: 16px;
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--neutral-secondary-text);
+    line-height: 2.8rem;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.8rem;
+    margin: 5.4rem 0 0 0;
+}
+
+.abstract-skill h1 {
+    font-family: var(--font-all);
+    font-size: 1.8rem;
+    color: var(--secondary-color-30);
+    font-weight: 500;
+}
+
+.abstract-skill p {
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    color: var(--neutral-secondary-text);
+    font-weight: 400;
+    margin-top: 1.6rem;
+}
+
+/*----------Section-Notes---------------*/
+
+.section-notes {
+    margin-top: 64px;
+    align-items: center;
+}
+
+.section-notes .notes-title {
+    font-family: var(--font-all);
+    font-size: 1.8rem;
+    color: var(--secondary-color-30);
+    font-weight: 600;
+}
+
+.section-notes .notes-body {
+    margin-top: 16px;
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--neutral-secondary-text);
+    line-height: 2.4rem;
+}
+
+
+.abstract-notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.abstract-notes .card {
+    margin: 4px 0 16px 0;
+    width: auto;
+    text-align: left;
+}
+
+.abstract-notes .card img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.abstract-notes .card h1 {
+    margin-top: .8rem;
+    font-family: var(--font-all);
+    font-size: 1.8rem;
+    color: var(--secondary-color-30);
+}
+
+.abstract-notes .card p {
+    margin-top: .8rem;
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--neutral-secondary-text);
+    line-height: 2.4rem;
+}
+
+.notes-button {
+    margin-top: 2.4rem;
+    padding: 16px 24px 16px 24px;
+    background-color: var(--secondary-color-30);
+    border: none;
+}
+
+.notes-button a {
+    font-family: var(--font-all);
+    font-size: var(--font-all);
+    color: var(--primary-color-60);
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.notes-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(103, 103, 239);
+}
+
+/*----------Section-Footer---------------*/
+
+footer {
+    margin-top: 6.4rem;
+}
+
+.footer-contact {
+    background-color: var(--neutral-grey);
+}
+
+footer h2 {
+    font-family: var(--font-all);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+footer ul li {
+    margin-top: 1.6rem;
+    list-style: none;
+}
+
+footer ul li a,
+p {
+    text-decoration: none;
+    font-family: var(--font-all);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--neutral-secondary-text);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: center;
+    font-family: var(--font-all);
+
+}
+
+.footer-links h3 {
+    color: var(--neutral-secondary-text);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .sub-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--neutral-secondary-text);
+}
