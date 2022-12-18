@@ -2,8 +2,12 @@ section {
     margin: auto 184px;
 }
 
+img{
+    object-fit: scale-down;
+}
+
 .abstract p {
-    width: 900px;
+    width: 1000px;
     margin-top: 198px;
     line-height: 100px;
 }
